@@ -14,12 +14,12 @@ data(ToothGrowth)
 2. Basic summary and struture of dataset
 head(ToothGrowth)
 ##    len supp dose
-## 1  4.2   VC  0.5
-## 2 11.5   VC  0.5
-## 3  7.3   VC  0.5
-## 4  5.8   VC  0.5
-## 5  6.4   VC  0.5
-## 6 10.0   VC  0.5
+#     1  4.2   VC  0.5
+#     2 11.5   VC  0.5
+#     3  7.3   VC  0.5
+#     4  5.8   VC  0.5
+#     5  6.4   VC  0.5
+#     6 10.0   VC  0.5
 str(ToothGrowth)
 ## 'data.frame':    60 obs. of  3 variables:
 ##  $ len : num  4.2 11.5 7.3 5.8 6.4 10 11.2 11.2 5.2 7 ...
