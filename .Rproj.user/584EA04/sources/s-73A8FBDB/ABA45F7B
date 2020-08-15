@@ -1,0 +1,26 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1596803579524.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "ABA45F7B",
+    "lastKnownWriteTime" : 1596805169,
+    "last_content_update" : 1596805169470,
+    "path" : "E:/Semster 6/Introduction to Data Sciences/Tooth Growth Analysis/code.r",
+    "project_path" : "code.r",
+    "properties" : {
+        "cursorPosition" : "42,0",
+        "scrollLine" : "22",
+        "tempName" : "Untitled1"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

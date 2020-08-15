@@ -1,0 +1,9 @@
+To run this project you need,
+
+R language
+R studio 
+
+Libraries:
+ggplot2
+
+to install it : install.packages("ggplot2")
