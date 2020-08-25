@@ -13,28 +13,28 @@ library(ggplot2)
 data(ToothGrowth)
 2. Basic summary and struture of dataset
 head(ToothGrowth)
-##    len supp dose
-#     1  4.2   VC  0.5
-#     2 11.5   VC  0.5
-#     3  7.3   VC  0.5
-#     4  5.8   VC  0.5
-#     5  6.4   VC  0.5
-#     6 10.0   VC  0.5
+#    len supp dose
+    1  4.2   VC  0.5
+    2 11.5   VC  0.5
+    3  7.3   VC  0.5
+    4  5.8   VC  0.5
+    5  6.4   VC  0.5
+    6 10.0   VC  0.5
 str(ToothGrowth)
-## 'data.frame':    60 obs. of  3 variables:
-##  $ len : num  4.2 11.5 7.3 5.8 6.4 10 11.2 11.2 5.2 7 ...
-##  $ supp: Factor w/ 2 levels "OJ","VC": 2 2 2 2 2 2 2 2 2 2 ...
-##  $ dose: num  0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 ...
+# 'data.frame':    60 obs. of  3 variables:
+#  $ len : num  4.2 11.5 7.3 5.8 6.4 10 11.2 11.2 5.2 7 ...
+# $ supp: Factor w/ 2 levels "OJ","VC": 2 2 2 2 2 2 2 2 2 2 ...
+#  $ dose: num  0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 0.5 ...
 summary(ToothGrowth)
-##       len        supp         dose      
-##  Min.   : 4.20   OJ:30   Min.   :0.500  
-##  1st Qu.:13.07   VC:30   1st Qu.:0.500  
-##  Median :19.25           Median :1.000  
-##  Mean   :18.81           Mean   :1.167  
-##  3rd Qu.:25.27           3rd Qu.:2.000  
-##  Max.   :33.90           Max.   :2.000
+#       len        supp         dose      
+      Min.   : 4.20   OJ:30   Min.   :0.500  
+      1st Qu.:13.07   VC:30   1st Qu.:0.500  
+      Median :19.25           Median :1.000  
+      Mean   :18.81           Mean   :1.167  
+      3rd Qu.:25.27           3rd Qu.:2.000  
+      Max.   :33.90           Max.   :2.000
 dim(ToothGrowth)
-## [1] 60  3
+# [1] 60  3
 3. Basic exploratory Analysis
 g<- ggplot(data=ToothGrowth, aes(x=paste(supp,dose) , y=len, fill=factor(dose)))
 g<- g+geom_boxplot() 
@@ -62,6 +62,6 @@ Conclusion<-data.frame("p-value"=c(t1$p.value,t2$p.value,t3$p.value),
 
 Conclusion
 ##               p.value Low.Confidence High.Confidence OJ.mean VC.mean
-## Dosage_.5 0.006358607       1.719057        8.780943   13.23    7.98
-## Dosage_1  0.001038376       2.802148        9.057852   22.70   16.77
-## Dosage_2  0.963851589      -3.798070        3.638070   26.06   26.14
+      Dosage_.5 0.006358607       1.719057        8.780943   13.23    7.98
+      Dosage_1  0.001038376       2.802148        9.057852   22.70   16.77
+      Dosage_2  0.963851589      -3.798070        3.638070   26.06   26.14
